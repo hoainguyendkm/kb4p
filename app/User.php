@@ -37,19 +37,19 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
-    public function gioitinhs(){
+    public function gioitinh(){
         return $this->belongsTo('App\Gioitinh');
     }
-    public function diachis(){
+    public function diachi(){
         return $this->belongsTo('App\Diachi');
     }
-    public function hocvans(){
+    public function hocvan(){
         return $this->belongsTo('App\Hocvan');
     }
-    public function honnhans(){
+    public function honnhan(){
         return $this->belongsTo('App\Honnhan');
     }
-    public function muctieus(){
+    public function muctieu(){
         return $this->belongsTo('App\Muctieu');
     }
 }

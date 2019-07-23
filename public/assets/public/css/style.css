@@ -1073,20 +1073,12 @@ input:focus {
         margin-right: 5px; }
       .single-youtube-channel .youtube-channel-content .subscribe-btn:hover {
         background-color: #404040; }
-
-.newsletter-form {
-  position: relative;
-  z-index: 1; }
-  .newsletter-form input {
-    width: 100%;
-    height: 50px;
-    border: none;
-    background-color: #f2f4f5;
-    text-align: center;
-    font-size: 14px;
-    color: #a6a6a6;
-    margin-bottom: 10px; }
-
+.nav-tabs .nav-link.active {
+  border-color: #dee2e600 #01010100 #db356b;
+}
+.nav-tabs .nav-link:hover {
+    border-color: #dee2e600 #01010100 #db356b;
+}
 .single-trending-post {
   position: relative;
   z-index: 1;

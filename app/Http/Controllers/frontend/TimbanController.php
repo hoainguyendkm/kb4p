@@ -4,6 +4,7 @@ namespace App\Http\Controllers\frontend;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\User;
 
 class TimbanController extends Controller
 {
@@ -14,7 +15,7 @@ class TimbanController extends Controller
      */
     public function index()
     {
-        //
+      
     }
 
     /**
