@@ -16,7 +16,7 @@
                 <a href="{{route('gioitinh',$u->gioitinh->slug)}}">{{$u->gioitinh->name}}</a>
                 <a href="{{route('muctieu',$u->muctieu->slug)}}">{{$u->muctieu->name}}</a>
             </div>
-            <a href="{{route('thongtin',[$u->id,$u->slug])}}" class="post-title">{{$u->ten}}</a>
+            <a href="video-post.html" class="post-title">{{$u->ten}}</a>
             <!-- Post Meta -->
             <div class="post-meta-2">
                 <span class="mr-3">Tuoi: {{$u->tuoi}}</span>

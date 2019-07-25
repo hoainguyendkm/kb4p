@@ -32,7 +32,7 @@
             margin: 0,
             loop: true,
             nav: true,
-            navText: ['<i class="ti-angle-left"></i>', '<i class="ti-angle-right"></i>'],
+            navText: ['<i class="fa fa-arrow-left"></i>', '<i class="fa fa-arrow-right"></i>'],
             dots: false,
             autoplay: true,
             autoplayTimeout: 5000,
@@ -63,6 +63,35 @@
         $("[data-duration]").each(function () {
             var anim_dur = $(this).data('duration');
             $(this).css('animation-duration', anim_dur);
+        });
+
+        $('.cungque').owlCarousel({
+            items: 3,
+            margin: 30,
+            loop: true,
+            nav: true,
+            navText: ['<i class="fa fa-arrow-left"></i>','<i class="fa fa-arrow-right"></i>'],
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            smartSpeed: 1000,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                540:{
+                    items:2
+                },
+                776:{
+                    items:3
+                },
+                992: {
+                    items: 4
+                },
+                1500: {
+                    items: 4
+                }
+            }
         });
 
         $('.trending-post-slides').owlCarousel({
@@ -154,7 +183,7 @@
     if ($.fn.scrollUp) {
         browserWindow.scrollUp({
             scrollSpeed: 1500,
-            scrollText: '<i class="ti-angle-up"></i>'
+            scrollText: '<i class="fa fa-arrow-up"></i>'
         });
     }
 

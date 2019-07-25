@@ -5,16 +5,13 @@ namespace App;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Cviebrock\EloquentSluggable\Sluggable;
 
 class User extends Authenticatable
 {
     use Notifiable;
+    use Sluggable;
 
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var array
-     */
     protected $fillable = [
         'name', 'email', 'password',
     ];
@@ -36,6 +33,14 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function sluggable(){
+        return[
+            'slug' => [
+                'source' =>'ten'
+            ]
+        ];
+    }
 
     public function gioitinh(){
         return $this->belongsTo('App\Gioitinh');

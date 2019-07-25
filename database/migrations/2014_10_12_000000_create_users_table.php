@@ -31,6 +31,7 @@ class CreateUsersTable extends Migration
             $table->text('toila');
             $table->text('timnguoi');
             $table->integer('luotxem')->default(0);
+            $table->string('slug');
             $table->rememberToken();
             $table->timestamps();
         });

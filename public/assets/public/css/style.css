@@ -448,6 +448,7 @@ input:focus {
             box-shadow: none; }
           .header-area .mag-main-menu .top-search-area form button:hover {
             color: #ed3974; }
+    .form-inline .form-group,.form-inline .form-group label{margin-right: 20px !important}
     .header-area .mag-main-menu .login-btn {
       position: relative;
       z-index: 1;
@@ -1134,7 +1135,7 @@ input:focus {
     -ms-transform: scale(1.1);
     transform: scale(1.1); }
 
-.trending-post-slides,
+.trending-post-slides,.cungque,
 .featured-video-posts-slide,
 .most-viewed-videos-slide,
 .sports-videos-slides {
@@ -1142,6 +1143,8 @@ input:focus {
   z-index: 1; }
   .trending-post-slides .owl-prev,
   .trending-post-slides .owl-next,
+  .cungque .owl-prev,
+  .cungque .owl-next,
   .featured-video-posts-slide .owl-prev,
   .featured-video-posts-slide .owl-next,
   .most-viewed-videos-slide .owl-prev,
@@ -1161,9 +1164,14 @@ input:focus {
     -webkit-transition-duration: 500ms;
     -o-transition-duration: 500ms;
     transition-duration: 500ms; }
-    .trending-post-slides .owl-prev:hover, .trending-post-slides .owl-prev:focus,
+    .trending-post-slides .owl-prev:hover, 
+    .trending-post-slides .owl-prev:focus,
     .trending-post-slides .owl-next:hover,
     .trending-post-slides .owl-next:focus,
+    .cungque .owl-prev:hover, 
+    .cungque .owl-prev:focus,
+    .cungque .owl-next:hover,
+    .cungque .owl-next:focus,
     .featured-video-posts-slide .owl-prev:hover,
     .featured-video-posts-slide .owl-prev:focus,
     .featured-video-posts-slide .owl-next:hover,
@@ -1181,6 +1189,8 @@ input:focus {
     @media only screen and (max-width: 767px) {
       .trending-post-slides .owl-prev,
       .trending-post-slides .owl-next,
+      .cungque .owl-prev,
+      .cungque .owl-next,
       .featured-video-posts-slide .owl-prev,
       .featured-video-posts-slide .owl-next,
       .most-viewed-videos-slide .owl-prev,
@@ -1191,7 +1201,7 @@ input:focus {
         right: 21px;
         height: 36px;
         top: -66px; } }
-  .trending-post-slides .owl-next,
+  .trending-post-slides .owl-next,.cungque .owl-next,
   .featured-video-posts-slide .owl-next,
   .most-viewed-videos-slide .owl-next,
   .sports-videos-slides .owl-next {
@@ -1440,7 +1450,7 @@ input:focus {
         .single-catagory-post .post-content .post-meta a:last-child {
           margin-left: 20px; }
           .single-catagory-post .post-content .post-meta a:last-child::after {
-            content: '/';
+            content: '|';
             position: absolute;
             top: 0;
             left: -15px;
@@ -1461,7 +1471,7 @@ input:focus {
       margin-bottom: 15px; }
       .single-catagory-post .post-content .post-meta-2 a {
         font-size: 14px;
-        color: #777777;
+        color: #ed3974;
         margin-right: 20px; }
         .single-catagory-post .post-content .post-meta-2 a:last-child {
           margin-right: 0; }
@@ -1487,7 +1497,7 @@ input:focus {
       .post-details-content .post-meta a:last-child {
         margin-left: 20px; }
         .post-details-content .post-meta a:last-child::after {
-          content: '/';
+          content: '|';
           position: absolute;
           top: 0;
           left: -15px;
@@ -1507,7 +1517,7 @@ input:focus {
     margin-bottom: 15px; }
     .post-details-content .post-meta-2 a {
       font-size: 14px;
-      color: #777777;
+      color: #ed3974;
       margin-right: 20px; }
       .post-details-content .post-meta-2 a:last-child {
         margin-right: 0; }
@@ -1714,7 +1724,7 @@ blockquote {
         .footer-area .footer-widget .footer-widget-nav ul li {
           -webkit-box-flex: 0;
           -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+          flex: 0 0 30%;
           max-width: 50%;
           width: 50%; }
           .footer-area .footer-widget .footer-widget-nav ul li a {
@@ -2194,6 +2204,13 @@ textarea.form-control {
       .map-area iframe {
         height: 250px; } }
 
+.dropdown-menu{border: none;}
+.dropdown-menu li{display: block !important; position: initial !important;}
+.dropdown-menu li a::after{content: none !important;}
+.btn-user:hover{cursor: pointer;}
+@media only screen and (max-width: 992px) {
+  .dropdown-menu{width: 100%}
+}
 /* ====== The End ====== */
 
 /*# sourceMappingURL=style.css.map */
